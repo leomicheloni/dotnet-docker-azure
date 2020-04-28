@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  myapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+    environment:
+      ASPNETCORE_URLS: http://+:80
